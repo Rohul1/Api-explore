@@ -14,16 +14,26 @@
 
 
 
-fetch("https://jsonplaceholder.typicode.com/users")
-.then(Response => Response.json())
-.then(datas => {
+// fetch("https://jsonplaceholder.typicode.com/users")
+// .then(Response => Response.json())
+// .then(datas => {
     
-for(const data of datas){
-console.log("person name:", data.name);
-console.log("company name:", data.company.name);
+// for(const data of datas){
+// console.log("person name:", data.name);
+// console.log("company name:", data.company.name);
 
+// }
+
+
+
+// })
+
+
+
+function loadData (){
+    const url = "https://jsonplaceholder.typicode.com/todos/1";
+    fetch(url)
+    .then(Response => Response.json())
+    .then(json => console.log(json))
 }
 
-
-
-})
