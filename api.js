@@ -37,3 +37,11 @@ function loadData (){
     .then(json => console.log(json))
 }
 
+
+
+// function userInfo (){
+//     userInfo.forEach(user => {
+//         console.log(user)
+
+//     });
+// }
